@@ -1,7 +1,12 @@
-n=int(input("số điện: "))
-if n<=50:
-    print("tiền điện là: ",n*1500)
-elif 50<n<=100:
-    print("tiền điện là: ",50*1500+(n-50)*2000)
+n=int(input(""))
+m=abs(n)
+if m ==0:
+    print("1")
 else:
-    print("tiền điện là: ",50*2500+(n-100)*3000)
+    dem=0
+    while m>0:
+        dem+=1
+        m=m//10
+    print(dem)
+
+
